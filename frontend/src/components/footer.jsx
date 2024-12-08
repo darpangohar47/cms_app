@@ -12,7 +12,7 @@ function Footer() {
         alert("Invalid Email");
         return;
       }
-    await fetch("http://127.0.0.1:3000/v1/subscription",
+    await fetch("https://cms-app-opal.vercel.app//v1/subscription",
       {
         method:"Post",
         headers:{

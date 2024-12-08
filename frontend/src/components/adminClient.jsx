@@ -18,7 +18,7 @@ const AdminClient = () => {
         console.log("Form submitted:", formData);
         // Add your form submission logic here
 
-        await fetch("http://127.0.0.1:3000/v1/client",{
+        await fetch("https://cms-app-opal.vercel.app//v1/client",{
             method:"POST",
             headers:{
                 "Content-Type": "application/json",

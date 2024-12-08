@@ -6,7 +6,7 @@ function Clients() {
     const [client, setClient] = useState([]);
     useEffect(() => {
         //fetch data from API
-        fetch('http://127.0.0.1:3000/v1/client').then((res)=>{
+        fetch('https://cms-app-opal.vercel.app//v1/client').then((res)=>{
           return res.json()
         }).then((res)=>{
           console.log(res)

@@ -3,11 +3,12 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './.env.local' });
 const express = require('express')
 // var express = require('express')
-var cors = require('cors')
+var cors = require('cors');
+const corsOptions = require('./Config/corsoptions');
 const app = express()
 const port = process.env.PORT
 
-app.use(cors())
+app.use(cors(corsOptions))
 // connect to database
 connectToMongo();
 app.use(express.json())

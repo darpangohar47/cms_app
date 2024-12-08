@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function AdminContact() {
     const [contacts, setContacts] = useState([]);
     useEffect( () => {
-     fetch('http://127.0.0.1:3000/v1/contact').then((res)=>res.json()).then((res)=>{
+     fetch('https://cms-app-opal.vercel.app//v1/contact').then((res)=>res.json()).then((res)=>{
         console.log(res.contacts)
         setContacts(res.contacts)})
         
