@@ -9,6 +9,8 @@ const corsOptions={
             callback(new Error('Not Allowed by CORS'));
         }
     },
+    methods: 'GET,POST,PUT,DELETE,OPTIONS', // Specify allowed methods
+    allowedHeaders: 'Content-Type,Authorization',
     optionsSuccessStatus:200,
 
 
